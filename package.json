@@ -9,8 +9,34 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@cloudinary/react": "^1.13.0",
+    "@cloudinary/url-gen": "^1.19.0",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.0",
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "@ffmpeg/core": "^0.10.0",
+    "@ffmpeg/ffmpeg": "^0.10.1",
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@mui/material": "^5.15.14",
+    "@mui/styles": "^5.15.14",
+    "@reduxjs/toolkit": "^2.2.2",
+    "axios": "^1.6.8",
+    "cloudinary": "^2.0.3",
+    "dotenv": "^16.4.5",
+    "formidable": "^3.5.1",
+    "formidable-serverless": "^1.1.1",
+    "multer": "^1.4.5-lts.1",
+    "next": "14.1.4",
+    "next-connect": "^1.0.0",
+    "path": "^0.12.7",
     "react": "^18",
+    "react-cloudinary-upload-widget": "^2.0.0",
+    "react-dnd": "^16.0.1",
     "react-dom": "^18",
-    "next": "14.1.4"
+    "react-easy-crop": "^5.0.6",
+    "react-file-drop": "^3.1.6",
+    "react-modal": "^3.16.1"
   }
 }
