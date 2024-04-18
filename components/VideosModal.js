@@ -31,6 +31,7 @@ const VideoModal =({open,setOpen,handleConcatVid}) =>{
   const fetchVideosData = async () => {
     const response = await fetch("/api/getVideos");
     const data = await response.json();
+    
     if (response.status === 200) {
       setTemplates(data.resources);
     }

@@ -14,15 +14,21 @@ const handler = async (req, res) => {
   if (req.method === "POST") {
     const { reqData } = req.body;
     console.log("req", reqData);
-    const resp = await cloudinary.url("mvgqsl1bzfgaz39hb0l1", {
+    const resp = await cloudinary.url(`${reqData.publicId}`, {
       resource_type: "video",
-      transformation: 
-     [
-      // {end_offset: "10", start_offset: "6.5"},
-      // { aspect_ratio: "3:4", crop: "fill", gravity: "north", width: 250 },
-        { overlay: "video:twxkmxwkzzkjdxeotz0c" },
-        { flags: "layer_apply" },  
-     ]
+      transformation: reqData.transformation
+    //  [
+    //   //  {end_offset: "10", start_offset: "6.5"},
+    //   // // { aspect_ratio: "3:4", crop: "fill", gravity: "north", width: 250 },
+    //   //   {flags:"splice", overlay: "video:samples:elephants" },
+    //   //   { flags: "layer_apply" },
+    //   // {height: 200, width: 300, crop: "fill"},
+    //   { aspect_ratio: "9:16", crop: "fill", gravity: "north", width: 300 },
+    //   {flags: "splice", overlay: "video:mvgqsl1bzfgaz39hb0l1"},
+    //   // {height: 200, width: 300, crop: "fill"},
+    //   { aspect_ratio: "9:16", crop: "fill", gravity: "north", width: 300 },
+    //   {flags: "layer_apply"}  
+    //  ]
       ,
     });
     // const resp = cloudinary.url("docs/video_features_tutorial/hair", {
